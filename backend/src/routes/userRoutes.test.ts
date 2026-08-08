@@ -483,6 +483,7 @@ describe('API de Usuarios - /api/users', () => {
       email: 'otro@example.com',
       role: 'user',
       createdAt: new Date(),
+      updatedAt: new Date(),
     };
 
     /*
