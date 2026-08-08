@@ -57,7 +57,9 @@ const API_URL = BASE_URL.endsWith('/api/users')
 
 /* =========================================================
    FUNCIÓN PARA MANEJO SEGURO DE ERRORES bacan esto
+   Este es
    ========================================================= */
+
 
 const getErrorMessage = (
   error: unknown,

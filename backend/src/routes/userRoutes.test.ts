@@ -488,6 +488,7 @@ describe('API de Usuarios - /api/users', () => {
 
     /*
      *a ver si funciona esto
+     * Este tambien 
      * Primera llamada:
      * encuentra usuario por ID.
      *
