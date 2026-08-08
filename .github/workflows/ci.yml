@@ -45,7 +45,7 @@ jobs:
 
       - name: Ejecutar pruebas Backend
         working-directory: ./backend
-        run: npm test --if-present
+        run: npm test
 
 
       - name: Verificar calidad Backend
