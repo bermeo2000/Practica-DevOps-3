@@ -46,8 +46,8 @@ const usuarioEjemplo: User = {
   email: 'miguel@example.com',
   role: 'user',
   createdAt: new Date('2026-08-07T12:00:00.000Z'),
+  updatedAt: new Date('2026-08-07T12:00:00.000Z'),
 };
-
 /*
 |--------------------------------------------------------------------------
 | PRUEBAS
