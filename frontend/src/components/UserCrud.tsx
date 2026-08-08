@@ -45,7 +45,7 @@ export interface User {
 }
 
 /* =========================================================
-   CONFIGURACIÓN DE API
+   CONFIGURACIÓN DE API para que funcione en producción y desarrollo
    ========================================================= */
 
 const BASE_URL =
