@@ -491,6 +491,7 @@ describe('API de Usuarios - /api/users', () => {
      * Este tambien 
      * Primera llamada:
      * encuentra usuario por ID.
+     * solo a ver si funciona esta en el bakend
      *
      * Segunda llamada:
      * encuentra otro usuario con el nuevo email.
