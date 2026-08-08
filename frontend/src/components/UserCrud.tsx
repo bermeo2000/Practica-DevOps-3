@@ -45,7 +45,7 @@ export interface User {
 }
 
 /* =========================================================
-   CONFIGURACIÓN DE API para que funcione en producción y desarrollo
+   CONFIGURACIÓN DE API
    ========================================================= */
 
 const BASE_URL =
@@ -56,7 +56,7 @@ const API_URL = BASE_URL.endsWith('/api/users')
   : `${BASE_URL.replace(/\/$/, '')}/api/users`;
 
 /* =========================================================
-   FUNCIÓN PARA MANEJO SEGURO DE ERRORES
+   FUNCIÓN PARA MANEJO SEGURO DE ERRORES bacan esto
    ========================================================= */
 
 const getErrorMessage = (

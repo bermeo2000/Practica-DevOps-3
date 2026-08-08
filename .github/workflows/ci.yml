@@ -42,28 +42,44 @@ jobs:
 
 
       - name: Obtener código
+
         uses: actions/checkout@v4
+
+        with:
+
+          fetch-depth: 0
 
 
 
       - name: Detectar archivos modificados
+
         uses: dorny/paths-filter@v3
 
         id: filter
 
         with:
 
+          base: ${{ github.event.before }}
+
           filters: |
 
+
             backend:
+
               - 'backend/**'
 
+
             frontend:
+
               - 'frontend/**'
 
+
             docker:
+
               - 'docker-compose.yml'
               - 'Dockerfile'
+
+
 
 
 
@@ -91,6 +107,7 @@ jobs:
 
 
       - name: Obtener código
+
         uses: actions/checkout@v4
 
 
@@ -117,7 +134,7 @@ jobs:
 
 
 
-      - name: Generar Prisma
+      - name: Generar cliente Prisma
 
         working-directory: ./backend
 
@@ -133,7 +150,7 @@ jobs:
 
 
 
-      - name: Calidad Backend
+      - name: Verificar calidad Backend
 
         working-directory: ./backend
 
@@ -210,7 +227,7 @@ jobs:
 
 
 
-      - name: Calidad Frontend
+      - name: Verificar calidad Frontend
 
         working-directory: ./frontend
 
@@ -242,7 +259,6 @@ jobs:
 
 
     if: needs.detectar-cambios.outputs.docker == 'true'
-
 
 
     runs-on: ubuntu-latest
