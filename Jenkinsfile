@@ -12,11 +12,13 @@ pipeline {
     }
 
     environment {
-        LOCAL_BACKEND_IMAGE = 'proyecto-integrador-u3-backend'
-        LOCAL_FRONTEND_IMAGE = 'proyecto-integrador-u3-frontend'
+    environment {
+                LOCAL_BACKEND_IMAGE = 'modulo8-backend'
+                LOCAL_FRONTEND_IMAGE = 'modulo8-frontend'
 
-        REMOTE_BACKEND_IMAGE = 'proyecto-integrador-backend'
-        REMOTE_FRONTEND_IMAGE = 'proyecto-integrador-frontend'
+                REMOTE_BACKEND_IMAGE = 'modulo8-backend'
+                REMOTE_FRONTEND_IMAGE = 'modulo8-frontend'
+            }
     }
 
     stages {
