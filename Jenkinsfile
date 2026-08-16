@@ -12,13 +12,11 @@ pipeline {
     }
 
     environment {
-    environment {
-                LOCAL_BACKEND_IMAGE = 'modulo8-backend'
-                LOCAL_FRONTEND_IMAGE = 'modulo8-frontend'
+        LOCAL_BACKEND_IMAGE = 'modulo8-backend'
+        LOCAL_FRONTEND_IMAGE = 'modulo8-frontend'
 
-                REMOTE_BACKEND_IMAGE = 'modulo8-backend'
-                REMOTE_FRONTEND_IMAGE = 'modulo8-frontend'
-            }
+        REMOTE_BACKEND_IMAGE = 'modulo8-backend'
+        REMOTE_FRONTEND_IMAGE = 'modulo8-frontend'
     }
 
     stages {
